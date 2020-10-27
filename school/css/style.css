@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white; }
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.centred {
+  width: fit-content;
+  margin: 3rem auto 0; }
+
+.week:not(:first-child) {
+  margin-left: 20px; }
+
+.hidden {
+  display: none; }
+
+nav {
+  margin-top: 2rem;
+  background-color: #333;
+  width: 100%; }
+  nav .content {
+    display: flex;
+    justify-content: space-between; }
+    nav .content a {
+      color: #fff;
+      text-decoration: none;
+      width: 100%; }
+    nav .content .menu_item {
+      width: 33.4%;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      nav .content .menu_item p {
+        margin: 0.5rem; }
+      nav .content .menu_item .menu_list {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        background-color: #333;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 2em;
+        left: 0; }
+        nav .content .menu_item .menu_list .list_item {
+          padding: 0.5rem;
+          width: calc(100% - 1rem);
+          text-decoration: none;
+          color: #fff; }
+          nav .content .menu_item .menu_list .list_item:hover {
+            background-color: #888; }
+          nav .content .menu_item .menu_list .list_item:active {
+            color: #00f; }
+      nav .content .menu_item:hover .menu_list {
+        display: flex; }
+
+.red {
+  color: #f00; }
+
+.green {
+  color: #0f0; }
+
+.table {
+  position: relative;
+  width: auto;
+  margin: 10rem auto 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
+  .table select {
+    width: 100%; }
+  .table label {
+    font-size: 14px; }
+  .table .trow {
+    display: flex;
+    width: 100%; }
+    .table .trow .block {
+      width: 100%; }
+  .table .sm {
+    width: fit-content; }
+  .table .thead {
+    background-color: #555; }
+  .table .col {
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word; }
+    .table .col input[type=text], .table .col input[type=date] {
+      width: 100%; }
+  .table .col_n, .table .col_m, .table .col_cov {
+    width: 10%; }
+  .table .col_cov {
+    padding: 0.5rem 0 !important;
+    text-align: center; }
+  .table .col_title {
+    width: 60%; }
+  .table .col_options, .table .col_name, .table .col_classroom {
+    width: 30%; }
+  .table .small {
+    width: 20%; }
+  .table .col_start, .table .col_finish, .table .col_number {
+    width: 20%; }
+  .table .col_start, .table .col_finish {
+    text-align: center; }
+    .table .col_start input, .table .col_finish input {
+      width: 2rem; }
+
+.sub_row {
+  display: flex;
+  width: 100%; }
+
+.col_les {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .col_les .sec {
+    margin: 3px; }
+    .col_les .sec span {
+      display: block;
+      width: 100%;
+      font-weight: 700; }
+      .col_les .sec span:last-child {
+        font-size: 12px;
+        font-weight: 400; }
+
+.col_d {
+  width: 5%;
+  writing-mode: vertical-lr;
+  text-align: center; }
+  .col_d span {
+    margin: auto;
+    transform: rotate(180deg);
+    display: block; }
+
+.options_block {
+  margin-top: 3rem;
+  margin-bottom: -7rem;
+  display: flex; }
+  .options_block .range_block {
+    width: 20%; }
+    .options_block .range_block input {
+      margin: 10px; }
+    .options_block .range_block input:not(:last-child) {
+      margin-bottom: 0; }
+  .options_block .classes_block {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px; }
+    .options_block .classes_block .class_item {
+      width: 9%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+
+/*# sourceMappingURL=style.css.map */
